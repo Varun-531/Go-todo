@@ -17,7 +17,7 @@ const AddTodo = ({
         body: newTodo,
       });
 
-      if (response.status !== 200) {
+      if (response.status !== 201) {
         toaster.create({
           title: "Error",
           description: "Failed to add todo",
